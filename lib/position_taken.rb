@@ -1,8 +1,12 @@
-def position_taken?(board, position)
-  if board[position] == " " || ""
-    return false
-  if board[position] == "X" || "O"
-    return true
+def position_taken?(board, index)
+  case board[index]
+    when " "
+      return false
+    when ""
+      return false
+    when "X"
+      return true
+    when "O"
+      return true
   end
-end
 end
