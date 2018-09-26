@@ -8,5 +8,7 @@ def position_taken?(board, index)
       return true
     when "O"
       return true
+    when nil
+      return false
   end
 end
